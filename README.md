@@ -1,7 +1,7 @@
 # IGOREK_Belarus's dotfiles
 
 > [!WARNING]
-> Dotfiles are not ready for use. As of May 5, 2024, my Arch Linux crashed due to the installation of NVIDIA drivers. Further work on this project is frozen
+> Dotfiles are not ready for use
 
 ### Information
 
