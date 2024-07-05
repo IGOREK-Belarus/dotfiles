@@ -1,0 +1,78 @@
+@import "fonts.rasi"
+@import "tokyonight_night.rasi"
+
+window {
+	width: 280px;
+	height: 460px;
+	border: 2px;
+	border-radius: 10px;
+	border-color: @accent;
+	background-color: @background;
+}
+
+mainbox {
+ 	children: [ inputbar, listview ];
+	background-color: @background;
+}
+
+inputbar {
+	children: [ entry ];
+	background-color: @background;
+}
+
+entry {
+	placeholder: "Type here";
+	placeholder-color: gray;
+	text-color: @accent;
+	background-color: @background;
+}
+
+listview {
+	scrollbar: false;
+	dynamic: false;
+	cycle: true;
+	background-color: @background;
+}
+
+element {
+	children: [ element-icon, element-text ];
+}
+
+element normal.normal {
+	background-color: @background;
+}
+
+element normal.urgent {
+	background-color: @background;
+}
+
+element normal.active {
+	background-color: @backgroumd;
+}
+
+element selected.normal {
+	background-color: @foreground;
+	text-color: @sub-accent;
+}
+
+element selected.urgent {
+	background-color: @foreground;
+	text-color: @sub-accent;
+}
+
+element selected.active {
+	background-color: @foreground;
+	text-color: @sub-accent;
+}
+
+element alternate.normal {
+	background-color: @background;
+}
+
+element alternate.urgent {
+	background-color: @background;
+}
+
+element alternate.active {
+	background-color: @background;
+}

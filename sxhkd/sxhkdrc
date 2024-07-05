@@ -1,25 +1,30 @@
-#
-# wm independent hotkeys
-#
 
-# terminal emulator
+# Terminal emulator
 super + Return
 	alacritty
 
-# program launcher
+# Program launcher
 super + space
 	rofi -show run
 #	dmenu_run
 
 # make sxhkd reload its configuration files:
-super + Escape
+super + alt + Escape
 	pkill -USR1 -x sxhkd
 
-#
-# bspwm hotkeys
+# Screenshot (Full desktop)
+Print
+	flameshot full --path ~/Pictures/Screenshots
+
+# Screenshot (Active window)
+# Print + shift
 #
 
-# quit/restart bspwm
+# Screenhot (GUI)
+Print + ctrl
+	flameshot gui
+
+# Quit/Restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
@@ -56,7 +61,7 @@ super + ctrl + {m,x,y,z}
 #
 
 # focus the node in the given direction
-super + {_,shift + }{h,j,k,l}
+super + {_,shift + }{h,j,u,k}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump

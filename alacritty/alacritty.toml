@@ -1,4 +1,4 @@
 import = [
-	"~/.config/alacritty/tokyonight_dark.toml",
+	"~/.config/alacritty/tokyonight_night.toml",
 	"~/.config/alacritty/fonts.toml",
 ]
