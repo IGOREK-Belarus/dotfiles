@@ -1,6 +1,7 @@
 # See dunst(5) for all configuration options
 
 [global]
+configPath = "~/.config/dunst/tokyonight_day.dunstrc";
     ### Display ###
 
     # Which monitor should the notifications be displayed on.
@@ -79,7 +80,7 @@
     # notifications.
     # Set to 0 to disable.
     # If gap_size is greater than 0, this setting will be ignored.
-    separator_height = 2
+    separator_height = 0
 
     # Padding between text and separator.
     padding = 8
@@ -92,7 +93,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 0
 
     # Defines color of the frame around the notification window.
     frame_color = "#aaaaaa"
@@ -101,7 +102,7 @@
     # If value is greater than 0, separator_height will be ignored and a border
     # of size frame_width will be drawn around each notification instead.
     # Click events on gaps do not currently propagate to applications below.
-    gap_size = 0
+    gap_size = 10
 
     # Define a color for the separator.
     # possible values are:
@@ -123,7 +124,7 @@
 
     ### Text ###
 
-    font = Monospace 8
+    font = JetBrains Mono 8
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -201,7 +202,7 @@
     enable_recursive_icon_lookup = true
 
     # Set icon theme (only used for recursive icon lookup)
-    icon_theme = Adwaita
+    icon_theme = Tokyonight-Dark
     # You can also set multiple icon themes, with the leftmost one being used first.
     # icon_theme = "Adwaita, breeze"
 
@@ -214,7 +215,7 @@
     min_icon_size = 32
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 128
+    max_icon_size = 64
 
     # Paths to default icons (only neccesary when not using recursive icon lookup)
     icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
@@ -226,7 +227,7 @@
     sticky_history = yes
 
     # Maximum amount of notifications kept in history
-    history_length = 20
+    history_length = 20 
 
     ### Misc/Advanced ###
 
@@ -250,7 +251,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 0
+    corner_radius = 6
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -309,28 +310,97 @@
     # where there are multiple screens with very different dpi values.
     per_monitor_dpi = false
 
+# Theme
+
+# TokyoNight Day
+
+#[urgency_low]
+#    background = "#d0d5e3"
+#    foreground = "#3760bf"
+#    frame_color = "#3760bf"
+#
+#[urgency_normal]
+#    background = "#e1e2e7"
+#    foreground = "#3760bf"
+#    frame_color = "#3760bf"
+#
+#[urgency_critical]
+#    background = "#c4c8da"
+#    foreground = "#c64343"
+#    frame_color = "#c64343
+
+# TokyoNight Moon
+
+#[urgency_low]
+#    background = "#1e2030"
+#    foreground = "#c8d3f5"
+#    frame_color = "#c8d3f5"
+#
+#[urgency_normal]
+#    background = "#222436"
+#    foreground = "#c8d3f5"
+#    frame_color = "#c8d3f5"
+#
+#[urgency_critical]
+#    background = "#2f334d"
+#    foreground = "#c53b53"
+#    frame_color = "#c53b53"
+
+# TokyoNight Night
 
 [urgency_low]
+    background = "#16161e"
+    foreground = "#c0caf5"
+    frame_color = "#c0caf5"
+
+[urgency_normal]
+    background = "#1a1b26"
+    foreground = "#c0caf5"
+    frame_color = "#c0caf5"
+
+[urgency_critical]
+    background = "#292e42"
+    foreground = "#db4b4b"
+    frame_color = "#db4b4b"
+
+# TokyoNight Storm
+
+#[urgency_low]
+#    background = "#1f2335"
+#    foreground = "#c0caf5"
+#    frame_color = "#c0caf5"
+#
+#[urgency_normal]
+#    background = "#24283b"
+#    foreground = "#c0caf5"
+#    frame_color = "#c0caf5"
+#
+#[urgency_critical]
+#    background = "#292e42"
+#    foreground = "#db4b4b"
+#    frame_color = "#db4b4b"
+
+# [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#222222"
-    foreground = "#888888"
-    timeout = 10
+    #	background = "#222222"
+    #	foreground = "#888888"
+    #	timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
-[urgency_normal]
-    background = "#285577"
-    foreground = "#ffffff"
-    timeout = 10
+# [urgency_normal]
+    #	background = "#285577"
+    #	foreground = "#ffffff"
+    #	timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
 
-[urgency_critical]
-    background = "#900000"
-    foreground = "#ffffff"
-    frame_color = "#ff0000"
-    timeout = 0
+# [urgency_critical]
+    #	background = "#900000"
+    #	foreground = "#ffffff"
+    #	frame_color = "#ff0000"
+    #	timeout = 0
     # Icon for notifications with critical urgency, uncomment to enable
     #default_icon = /path/to/icon
 
