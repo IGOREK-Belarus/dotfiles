@@ -3,9 +3,6 @@
 <img src="./screenshots/Main.png">
 <img src="./screenshots/Showcase.png">
 
-> [!WARNING]
-> Dotfiles are not ready for use
-
 ### Information
 
 - **OS**: Arch Linux
@@ -14,11 +11,13 @@
 - **Bar**: Polybar
 - **Notifications**: Dunst
 - **Compositor**: Picom
-- **Theme**: [GTK3 TokyoNight](https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme)
+- **Theme**: [GTK3 TokyoNight](https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme) ([Specifically this commit](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme/commit/94fba793d3e25f1da0f769d4f41e2fff6e1d0724))
+- **Icons**: oomox-Tokyonight
 - **Terminal**: Alacritty
 - **App menu**: Rofi
-- **Browser**: quteBrowser
-- **Code editor**: Vim
+- **Browser**: Firefox ESR, quteBrowser
+- **Code editor**: VS Codium, NVim
+- **Colors:** TokyoNight (Day, Moon, Storm, Night)
 
 ### Keybinds
 
