@@ -19,6 +19,20 @@
 - **Code editor**: VS Codium, NVim
 - **Colors:** TokyoNight (Day, Moon, Storm, Night)
 
+### Changing between Day/Moon/Storm/Night
+
+I tried to make changing colorscheme easy. Here is a list of files where to change property:
+
+- ``./alacritty/alacritty.toml``
+- ``./rofi/config.rasi``
+- ``./polybar/config.ini``
+- ``./dunst/dunstrc``
+
+>[!Note]
+>Dunst does not supprt external files import. To change colorscheme - You need to comment current colorscheme and uncomment required colorscheme. *(Colorscheme titles should not be uncommented, there are only here for better visiblability and understanding)*
+
+Also, you need to change GTK theme *(I recommend using LXAppearance)*
+
 ### Keybinds
 
 | Keybind | Action |
