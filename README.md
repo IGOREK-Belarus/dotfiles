@@ -1,5 +1,8 @@
 # IGOREK_Belarus's dotfiles
 
+<img src="./screenshots/Main.png">
+<img src="./screenshots/Showcase.png">
+
 > [!WARNING]
 > Dotfiles are not ready for use
 
